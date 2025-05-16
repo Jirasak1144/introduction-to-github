@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Jirasak Namkuntree</title>
+    <style>
+        
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+            color: #333; 
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-list li {
+            background-color: #ddd;
+            color: #333;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .portfolio-item-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">เกี่ยวกับฉัน</a></li>
+                <li><a href="#skills">ทักษะ</a></li>
+                <li><a href="#portfolio">ผลงานและกิจกรรม</a></li>
+                <li><a href="#contact">ช่องทางการติดต่อ</a></li>
+                <li><a href="#others">อื่นๆ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+      <h2>เกี่ยวกับฉัน</h2>
+        <img src="https://scontent.fkkc3-1.fna.fbcdn.net/v/t39.30808-6/467723796_8785438128204833_3146593176569076392_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XA7YW4lmiHkQ7kNvwFtDrCW&_nc_oc=Adm8OWK_iLS9F0J1qkcwJthClPg9CQG671T4A_Luk_u9iaSvXF__W7ZBzBD4DHGxsWo&_nc_zt=23&_nc_ht=scontent.fkkc3-1.fna&_nc_gid=YIFroY8Of6O74b69eWvHxA&oh=00_AfJLuse5L2NC-taLGuOJ2kWMtx9t7S6wtgZ5fh4WKpqS_A&oe=682AE8F5" alt="รูปภาพ" class="profile-image">
+        <p><strong>ชื่อ-นามสกุล:</strong> นาย จิระศักดิ์ นามขันตรี</p>
+        <p><strong>ข้อมูลส่วนตัวอื่นๆ:</strong> วันเกิดวันที่ 1 เดือน กรกฎาคม<br>บ้านเลขที่ 661 หมู่ 3 ตำบล ศิลา อำเภอ เมืองขอนแก่น จังหวัด ขอนแก่น</p>
+        <p><strong>ประวัติการศึกษา:</strong>  ประกาศนียบัตรวิชาชีพชั้นสูง ที่ วิทยาลัยเทคโนโลยีภาคตะวันออกเฉียงเหนือ <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ปัจจุบัน ศึกษาที่ มหาลัยวิทยาลัยศรีปทุม วิทยาเขตขอนแก่น 40000</p>
+        <p>คติประจำใจ พอใจเท่าที่มี ยินดีเท่าที่ได้</p>
+</section>
+
+    <section id="skills">
+      <h2>ทักษะ</h2>
+        <ul class="skill-list">
+            <li>[ทักษะที่ 1 การตัดต่อวิดิโอ]</li>
+            <li>[ทักษะที่ 2 การตัดต่อภาพ สร้างภาพ]</li>
+            <li>[ทักษะที่ 3 เขียนโค้ด]</li>
+      </ul>
+        <p>ทักษะที่ 1 ตัดต่อวิดิโอในโปรแกรม Adobe premiere pro , Adobe after effects , Adobe animate และโปรแกรมต่างๆ สามารถใช้ได้ เป็นคนเรียนรู้ไวและเข้าใจเร็ว<br>
+		ทักษะที่ 2 การสร้างภาพในโปรแกรม Adobe illustrator , Adobe lightroom , Adobe photoshop และโปรแกรมต่างๆ<br>
+		ทักษะที่ 3 การเขียนโค้ดเข้าใจพื้นฐาน เขียนโค้ด basic ได้ ทำความเข้าใจเร็ว ตัวอย่างโปรแกรมที่ใช้ Adobe dreamweaver </p>
+</section>
+
+    <section id="portfolio">
+      <h2>ผลงานและกิจกรรม</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="งานๆๆๆๆ.jpg" alt="ผลงาน 1">
+                <div class="portfolio-item-details">
+                    <h3>Portfolio</h3>
+                    <p>[งานถ่ายภาพแล้วเอาทำต่อด้วย adobe illustrator]</p>
+            </div>
+          </div>
+            <div class="portfolio-item">
+                <img src="End.png" alt="ผลงาน 2">
+                <div class="portfolio-item-details">
+                    <h3>[Promote]</h3>
+                    <p>[ทำคลิปิดิโอโปรโมทสาขาคณะเทคโนโลยีสารสนเทศ]<strong>  </strong> <a href="Com 1.Avi" ></p><strong>  [คลิกเพื่อดูวิดิโอ]</strong> <a href="Com 1.Avi"
+                </div>
+            </div>
+      </div>
+</section>
+
+    <section id="contact">
+        <h2>ช่องทางการติดต่อ</h2>
+        <div class="contact-info">
+            <ul>
+                <li><strong>อีเมล:</strong> <a href="mailto:Jirasak807@gmail.com">Email</a></li>
+                <li><strong>เบอร์โทรศัพท์:</strong> 0840078856</li>
+                
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/JirasakAek1" target="_blank">Facebook</a> </li>
+          </ul>
+        </div>
+    </section>
+
+<section id="others">
+        <h2>อื่นๆ</h2>
+ 
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfolio ของ [Jirasak Namkuntree]</p>
+    </footer>
+
+</body>
+</html>
